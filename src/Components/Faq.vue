@@ -18,27 +18,22 @@ export default {
       </h1>
       <div class="flex flex-col gap-y-6 lg:mt-[92px]">
         <Accordion
-          data-aos="fade-up"
           title="1. What services does your pepe chat offer?"
           content="Customers often want a clear understanding of the services provided, whether it's web design, branding, social media management, content creation, or digital marketing strategies."
         />
         <Accordion
-          data-aos="fade-up"
           title="2. Why pepe chat is different than others?"
           content="Customers often want a clear understanding of the services provided, whether it's web design, branding, social media management, content creation, or digital marketing strategies."
         />
         <Accordion
-          data-aos="fade-up"
           title="3. What is your working process?"
           content="Customers often want a clear understanding of the services provided, whether it's web design, branding, social media management, content creation, or digital marketing strategies."
         />
         <Accordion
-          data-aos="fade-up"
           title="4. How to buy pepe chat?"
           content="Customers often want a clear understanding of the services provided, whether it's web design, branding, social media management, content creation, or digital marketing strategies."
         />
         <Accordion
-          data-aos="fade-up"
           title="5. About pepe chat?"
           content="Customers often want a clear understanding of the services provided, whether it's web design, branding, social media management, content creation, or digital marketing strategies."
         />
