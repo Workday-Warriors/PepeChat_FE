@@ -19,14 +19,16 @@ const handleOpen = () => {
 <template>
   <div
     @click="handleOpen"
-    class="w-full min-h-[80px] relative cursor-pointer rounded-[12px] px-[30px] border border-solid"
-    :class="[isOpen ? 'border-[#3CFF71] py-10 ' : 'border-[#E8F4F1]  py-[28px] ']"
+    class="w-full min-h-[80px] relative cursor-pointer rounded-[12px] px-4 lg:px-[30px] border border-solid"
+    :class="[
+      isOpen ? 'border-[#3CFF71] py-10 ' : 'border-[#E8F4F1]  py-[28px] ',
+    ]"
   >
     <div class="flex items-center justify-between w-full">
       <div>
         <p
-          class="[&quot;text-base font-semibold text-[#E8F4F1] leading-6 text-left&quot;] absolute top-1/2 !bg-[#040f00] transition-all duration-300 -translate-y-1/2 z-10"
-          :class="[isOpen ? '!top-0 text_gradient !z-10' : '']"
+          class="[&quot; text-[14px] lg:text-base font-semibold text-[#E8F4F1] leading-6 text-left&quot;] absolute top-1/2 transition-all duration-300 -translate-y-1/2 z-10"
+          :class="[isOpen ? '!top-0 text_gradient !z-10 !bg-[#040f00] ' : '']"
         >
           {{ props.title }}
         </p>
@@ -39,7 +41,7 @@ const handleOpen = () => {
       </div>
     </div>
     <div
-      class="text-base font-semibold leading-6 w-[60%] text-left text-[#E8F4F1] overflow-hidden transition-all duration-200"
+      class="text-base font-semibold leading-6 w-full lg:w-[60%] text-left text-[#E8F4F1] overflow-hidden transition-all duration-200"
       :class="[isOpen ? 'h-auto' : 'h-0']"
     >
       {{ props.content }}

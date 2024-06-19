@@ -23,6 +23,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
 }
 
 .text_gradient {
@@ -71,4 +72,9 @@ body {
       rgba(6, 23, 3, 0) 100%
     )
     1;
+}
+
+.green_blur {
+  filter: blur(500px);
+  background: rgba(60, 255, 113, 0.14);
 }
