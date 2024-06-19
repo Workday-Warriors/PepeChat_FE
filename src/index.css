@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button_bg {
+  background: radial-gradient(
+    93.86% 529.43% at 6.14% 0%,
+    #c5ffa9 0%,
+    #3cff71 100%
+  );
+}
+
+.button_outline {
+  background: radial-gradient(
+    93.86% 529.43% at 6.14% 0%,
+    rgba(197, 255, 169, 0) 0%,
+    rgba(60, 255, 113, 0) 100%
+  );
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.text_gradient {
+  background: linear-gradient(128.42deg, rgb(197, 255, 169), rgb(60, 255, 113));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body {
+  background-color: #040f00;
+}
+
+.hover_link:hover {
+  background: linear-gradient(128.42deg, rgb(197, 255, 169), rgb(60, 255, 113));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: linear-gradient(98.19deg, #c5ffa9 12.13%, #3cff71 84.11%);
+}
+
+.border_gradient {
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(90.55deg, #c1ffa7 0.64%, #3dff71 99.89%), 1;
+}
+
+.green_gradient {
+  background: linear-gradient(224.15deg, #c5ffa9 29.51%, #3cff71 75.37%);
+}
+
+.yellow_gradient {
+  background: linear-gradient(237.35deg, #c5ffa9 25.33%, #e2ff31 38.14%);
+}
+
+.roadmap_line {
+  background: linear-gradient(90deg, #3cff71 0%, rgba(59, 151, 25, 0) 100%);
+}
+
+.footer_border {
+  border: 1px solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba(10, 45, 14, 0) -0.87%,
+      #3cff71 48.88%,
+      rgba(6, 23, 3, 0) 100%
+    )
+    1;
+}
