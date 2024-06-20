@@ -9,20 +9,20 @@ export default {
 </script>
 
 <template>
-  <section class="w-full relative">
+  <section id="products" class="w-full relative">
     <div class="container pt-[24px] lg:pt-[124px] w-full">
       <h1
         data-aos="fade-up"
-        class="text-[32px] lg:text-[64px] text-[#E8F4F1] font-bold leading-[96px] text-left"
+        class="text-[32px] lg:text-[64px] text-[#E8F4F1] font-bold leading-[96px] text-center lg:text-left"
       >
         How To
         <span class="text_gradient">Buy</span>
       </h1>
     </div>
-    <div class="w-full relative container">
+    <div class="w-full relative container px-4 lg:px-8">
       <div class="w-full flex mt-[36px] items-start justify-start">
         <div class="w-full lg:w-[60%] flex lg:flex-row flex-col gap-x-10">
-          <div class="lg:w-auto w-full">
+          <div class="lg:w-auto w-full flex justify-center lg:justify-normal">
             <div
               class="w-[137px] mb-8 lg:mb-0 flex justify-center items-center h-[137px] rounded-full bg-[#133108]"
             >
@@ -44,13 +44,13 @@ export default {
           <div>
             <h1
               data-aos="fade-up"
-              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-left"
+              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-center lg:text-left"
             >
               Create a <span class="text_gradient">wallet</span>
             </h1>
             <p
               data-aos="fade-up"
-              class="text-base text-[#C3C3C3] font-semibold leading-6 text-left"
+              class="text-base text-[#C3C3C3] font-semibold leading-6 text-center lg:text-left"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -63,7 +63,7 @@ export default {
 
       <div class="w-full flex mt-20 items-start justify-end">
         <div class="w-full lg:w-[60%] flex-col lg:flex-row lg:flex gap-x-10">
-          <div>
+          <div class="flex justify-center lg:justify-normal">
             <div
               class="w-[137px] mb-8 lg:mb-0 flex justify-center items-center h-[137px] rounded-full bg-[#133108]"
             >
@@ -85,13 +85,13 @@ export default {
           <div>
             <h1
               data-aos="fade-up"
-              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-left"
+              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-center lg:text-left"
             >
               Get Some <span class="text_gradient">ETH</span>
             </h1>
             <p
               data-aos="fade-up"
-              class="text-base text-[#C3C3C3] font-semibold leading-6 text-left"
+              class="text-base text-[#C3C3C3] font-semibold leading-6 text-center lg:text-left"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -104,7 +104,7 @@ export default {
 
       <div class="w-full flex mt-20 items-start justify-start">
         <div class="w-ful lg:w-[60%] flex-col lg:flex-row lg:flex gap-x-10">
-          <div>
+          <div class="flex justify-center lg:justify-normal">
             <div
               class="w-[137px] mb-8 lg:mb-0 flex justify-center items-center h-[137px] rounded-full bg-[#133108]"
             >
@@ -126,13 +126,13 @@ export default {
           <div>
             <h1
               data-aos="fade-up"
-              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-left"
+              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-center lg:text-left"
             >
               Go to <span class="text_gradient">uniwap</span>
             </h1>
             <p
               data-aos="fade-up"
-              class="text-base text-[#C3C3C3] font-semibold leading-6 text-left"
+              class="text-base text-[#C3C3C3] font-semibold leading-6 text-center lg:text-left"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -145,7 +145,7 @@ export default {
 
       <div class="w-full flex mt-20 items-start justify-end">
         <div class="w-full lg:w-[60%] flex-col lg:flex-row lg:flex gap-x-10">
-          <div>
+          <div class="flex justify-center lg:justify-normal">
             <div
               class="w-[137px] mb-8 lg:mb-0 flex justify-center items-center h-[137px] rounded-full bg-[#133108]"
             >
@@ -167,13 +167,13 @@ export default {
           <div>
             <h1
               data-aos="fade-up"
-              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-left"
+              class="text-[32px] text-[#E8F4F1] font-bold leading-[48px] text-center lg:text-left"
             >
               <span class="text_gradient">Switch</span>
             </h1>
             <p
               data-aos="fade-up"
-              class="text-base text-[#C3C3C3] font-semibold leading-6 text-left"
+              class="text-base text-[#C3C3C3] font-semibold leading-6 text-center lg:text-left"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -188,7 +188,7 @@ export default {
         class="absolute hidden lg:inline-block w-[574.95px] top-20 left-16 z-[-1]"
       />
     </div>
-    <div class="w-full flex justify-center pt-[76px]">
+    <div class="w-full flex justify-center pt-6 lg:pt-[76px]">
       <div data-aos="fade-up" class="flex items-center gap-x-6">
         <Button label="Buy Now!" variant="primary" />
         <Button label="Chat Now!" variant="outline" />

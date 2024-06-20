@@ -11,27 +11,26 @@ export default {
   },
 };
 </script>
-<template id="about">
-  <section class="w-full relative">
+<template>
+  <section id="roadmap" class="w-full relative">
     <div
-      class="flex flex-col lg:flex-row relative container justify-between gap-x-[77px]"
+      class="flex flex-col lg:flex-row relative container px-4 lg:px-8 justify-between gap-x-[77px]"
     >
       <div
         class="w-full lg:w-[47.5%] flex gap-y-6 lg:gap-y-[410px] flex-col items-end justify-end"
       >
         <div class="lg:w-auto w-full">
           <div
-            class="py-[38px] shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
+            data-aos="fade-up"
+            class="py-4 lg:py-[38px] shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-5 lg:px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
           >
             <h1
-              data-aos="fade-up"
-              class="text-5xl text-[#3CFF71] font-bold leading-[72px] text-left"
+              class="text-[28px] lg:text-5xl text-[#3CFF71] font-bold lg:leading-[72px] text-left"
             >
               Phase 1
             </h1>
             <ul class="flex flex-col mt-[26px] gap-y-[18px]">
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -42,7 +41,6 @@ export default {
                 Contract Creation
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -53,7 +51,6 @@ export default {
                 Website Designing
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -64,7 +61,6 @@ export default {
                 Token Launch
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -80,16 +76,16 @@ export default {
 
         <div class="lg:w-auto hidden lg:block w-full">
           <div
-            class="py-[38px] mt-6 lg:mt-0 shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
+            data-aos="fade-up"
+            class="py-4 lg:py-[38px] mt-6 lg:mt-0 shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-5 lg:px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
           >
             <h1
-              class="text-5xl font-bold leading-[72px] text-left text-[#3CFF71]"
+              class="text-[28px] lg:text-5xl font-bold lg:leading-[72px] text-left text-[#3CFF71]"
             >
               Phase 3
             </h1>
             <ul class="flex flex-col mt-[26px] gap-y-[18px]">
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -100,7 +96,6 @@ export default {
                 Dextools Listing
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -111,7 +106,6 @@ export default {
                 Stake Live
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -122,7 +116,6 @@ export default {
                 CoinMarketCap Listing
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -161,13 +154,11 @@ export default {
       >
         <div class="hidden lg:inline-block lg:w-auto w-full">
           <h1
-            data-aos="fade-up"
             class="text-[64px] font-bold leading-[96px] text-[#3CFF71] text-left"
           >
             Our <span class="text_gradient">Roadmap</span>
           </h1>
           <p
-            data-aos="fade-up"
             class="text-base font-semibold leading-6 w-[70%] text-[#3CFF71] text-left"
           >
             Pepe Is Tired Of Watching Everyone Play Hot Potato With The Endless
@@ -176,17 +167,16 @@ export default {
         </div>
         <div class="lg:w-auto mt-6 w-full">
           <div
-            class="py-[38px] shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
+            data-aos="fade-up"
+            class="py-4 lg:py-[38px] shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-5 lg:px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
           >
             <h1
-              data-aos="fade-up"
-              class="text-5xl font-bold leading-[72px] text-left text-[#3CFF71]"
+              class="text-[28px] lg:text-5xl font-bold lg:leading-[72px] text-left text-[#3CFF71]"
             >
               Phase 2
             </h1>
             <ul class="flex flex-col mt-[26px] gap-y-[18px]">
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -197,7 +187,6 @@ export default {
                 NTM Listing
               </li>
               <li
-                data-aos="fade-up"
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
@@ -211,7 +200,6 @@ export default {
                 class="flex items-center text-[#3CFF71] gap-x-3 text-base font-semibold leading-6 text-left"
               >
                 <div
-                  data-aos="fade-up"
                   class="w-[29px] h-[29px] green_gradient rounded-full flex justify-center items-center"
                 >
                   <Check />
@@ -233,10 +221,11 @@ export default {
         </div>
         <div class="lg:w-auto inline-block mt-6 lg:hidden w-full">
           <div
-            class="py-[38px] border-r border-r-[#E8F4F1] border-b border-b-[#E8F4F1] border-l border-l-[#E8F4F1] w-full lg:w-[475.42px] inline-block px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
+            data-aos="fade-up"
+            class="py-4 lg:py-[38px] shadow-[0px_0px_6px_0px_#3CFF71] w-full lg:w-[475.42px] inline-block px-5 lg:px-[36px] rounded-[22px] border-[0px,0.5px,0.5px,0.5px] border-solid bg-[#081506] border-[#E8F4F1]"
           >
             <h1
-              class="text-5xl font-bold leading-[72px] text-left text-[#3CFF71]"
+              class="text-[28px] lg:text-5xl font-bold lg:leading-[72px] text-left text-[#3CFF71]"
             >
               Phase 3
             </h1>
@@ -286,12 +275,6 @@ export default {
         </div>
       </div>
     </div>
-    <!-- <div
-      class="hidden lg:inline-block green_blur w-[1134px] h-[1134px] absolute left-[-900px]"
-    />
-    <div
-      class="hidden lg:inline-block green_blur w-[1134px] h-[1134px] absolute top-[-600px] right-[-900px]"
-    /> -->
   </section>
 </template>
 

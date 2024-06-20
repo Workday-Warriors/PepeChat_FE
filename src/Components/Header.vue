@@ -13,6 +13,10 @@ export default {
       isOpen.value = !isOpen.value;
     };
 
+    const closeMenu = () => {
+      isOpen.value = false;
+    };
+
     watch(isOpen, (newVal) => {
       if (newVal) {
         document.body.style.overflow = "hidden";
@@ -24,6 +28,7 @@ export default {
     return {
       isOpen,
       toggleMenu,
+      closeMenu,
     };
   },
 };
@@ -32,7 +37,7 @@ export default {
 <template>
   <header class="w-full">
     <div
-      class="w-full pt-5 lg:pt-[43px] flex justify-between items-center container"
+      class="w-full pt-5 px-4 lg:px-8 lg:pt-[43px] flex justify-between items-center container"
     >
       <a href="#" class="flex items-center">
         <img src="../assets/logo.svg" alt="pepe" />
@@ -48,7 +53,7 @@ export default {
       >
         <li>
           <a
-            @click="toggleMenu"
+            @click="closeMenu"
             href="#"
             class="hover_link text-base font-semibold text-[#E8F4F1] leading-6 text-left"
             >Home</a
@@ -56,7 +61,7 @@ export default {
         </li>
         <li>
           <a
-            @click="toggleMenu"
+            @click="closeMenu"
             href="#about"
             class="hover_link text-base font-semibold text-[#E8F4F1] leading-6 text-left"
             >About</a
@@ -64,7 +69,7 @@ export default {
         </li>
         <li>
           <a
-            @click="toggleMenu"
+            @click="closeMenu"
             href="#products"
             class="hover_link text-base font-semibold text-[#E8F4F1] leading-6 text-left"
             >Product</a
@@ -72,7 +77,7 @@ export default {
         </li>
         <li>
           <a
-            @click="toggleMenu"
+            @click="closeMenu"
             href="#roadmap"
             class="text-base hover_link font-semibold text-[#E8F4F1] leading-6 text-left"
             >Roadmap</a
@@ -83,12 +88,12 @@ export default {
         </li>
       </ul>
       <Button
-        class="lg:inline-block hidden"
+        class="lg:inline-block z-10 hidden"
         label="Contact Us"
         variant="primary"
       />
       <div
-        @click="toggleMenu"
+        @click="closeMenu"
         class="w-[45px] h-[30px] z-[999] flex lg:hidden flex-col justify-between cursor-pointer"
       >
         <div class="w-full h-[3px] rounded bg-white" />

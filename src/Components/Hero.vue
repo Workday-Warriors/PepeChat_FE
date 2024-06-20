@@ -15,7 +15,7 @@ export default {
       <div class="w-full lg:w-1/2">
         <h1
           data-aos="fade-up"
-          class="text-[45px] font-bold lg:leading-[92px] text-left text-[#E8F4F1]"
+          class="text-[36px] font-bold lg:leading-[92px] text-left text-[#E8F4F1]"
         >
           <span class="text_gradient">PepeChat:</span> Expert Advice Real-Time
           Chat
@@ -42,7 +42,7 @@ export default {
       </div>
       <div class="w-full lg:w-1/2">
         <img
-          class="w-[464px] h-[406px] object-cover"
+          class="w-[264px] h-[306px] lg:w-[464px] lg:h-[406px] object-cover"
           src="../Assets/hero.png"
           alt="PepeChat"
           data-aos="fade-up"
@@ -51,52 +51,46 @@ export default {
           data-aos="fade-up"
           src="../Assets/email.png"
           alt=""
-          class="absolute !w-[791px] h-[791px] rotate-z-[64.48deg] -top-20 right-0 -z-10"
+          class="absolute h-[600px] lg:!w-[791px] lg:h-[791px] rotate-z-[64.48deg] -top-20 right-0 -z-10"
         />
       </div>
     </div>
-    <div class="w-full container mt-[41px]">
+    <div data-aos="fade-up" class="w-full container px-4 lg:px-8 mt-[41px]">
       <div class="border_gradient w-full rounded-[8px]">
         <div
           class="w-full grid grid-cols-1 lg:grid-cols-4 shadow-[0px_0px_8px_0px_#56FF7B59] rounded-[8px]"
         >
-          <div class="border_right_gradient py-10">
+          <div class="border_right_gradient py-3 lg:py-10">
             <h3
-              data-aos="fade-up"
               class="text-4xl font-bold leading-[54px] text-center text_gradient"
             >
               8
             </h3>
             <p
-              data-aos="fade-up"
               class="text-xl font-bold leading-[30px] text-center text_gradient"
             >
               Taxers
             </p>
           </div>
-          <div class="border_right_gradient py-10">
+          <div class="border_right_gradient py-3 lg:py-10">
             <h3
-              data-aos="fade-up"
               class="text-4xl font-bold leading-[54px] text-center text_gradient"
             >
               7523
             </h3>
             <p
-              data-aos="fade-up"
               class="text-xl font-bold leading-[30px] text-center text_gradient"
             >
               Holders
             </p>
           </div>
-          <div class="border_right_gradient py-10">
+          <div class="border_right_gradient py-3 lg:py-10">
             <h3
-              data-aos="fade-up"
               class="text-4xl font-bold leading-[54px] text-center text_gradient"
             >
               854
             </h3>
             <p
-              data-aos="fade-up"
               class="text-xl font-bold leading-[30px] text-center text_gradient"
             >
               Most Pepe
@@ -104,13 +98,11 @@ export default {
           </div>
           <div class="py-10">
             <h3
-              data-aos="fade-up"
               class="text-4xl font-bold leading-[54px] text-center text_gradient"
             >
               854
             </h3>
             <p
-              data-aos="fade-up"
               class="text-xl font-bold leading-[30px] text-center text_gradient"
             >
               Most Pepe

@@ -4,12 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .button_bg {
   background: radial-gradient(
     93.86% 529.43% at 6.14% 0%,
     #c5ffa9 0%,
     #3cff71 100%
   );
+  transition: all 300ms ease !important;
+}
+
+.button_bg:hover {
+  background: transparent;
 }
 
 .button_outline {
@@ -81,4 +90,37 @@ body {
 .green_blur {
   filter: blur(500px);
   background: #3cff7124;
+}
+
+.icon_hover {
+  transition: all 300ms ease !important;
+}
+
+.icon_hover:hover {
+  background: radial-gradient(
+    90.1% 90.1% at 43.59% 9.9%,
+    #c5ffa9 0%,
+    #3cff71 100%
+  );
+  box-shadow: 0px 0px 10.3px 0px #f68822a1 inset;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3cff71;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3cff71;
 }

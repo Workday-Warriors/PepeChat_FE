@@ -11,24 +11,24 @@ export default {
   <section class="w-full relative">
     <div
       data-aos="fade-up"
-      class="w-full container flex-col lg:flex-row gap-y-10 lg:flex items-center pt-[24px] lg:pt-[117px]"
+      class="w-full container px-4 lg:px-8 flex-col lg:flex-row gap-y-10 lg:flex items-center pt-[24px] lg:pt-[117px]"
     >
       <div class="w-full lg:w-1/2">
         <h3
           data-aos="fade-up"
-          class="text-[32px] lg:text-[40px] font-bold text-left text_gradient"
+          class="text-[32px] lg:text-[40px] font-bold text-center lg:text-left text_gradient"
         >
           PepeChat
         </h3>
         <h1
           data-aos="fade-up"
-          class="text-[32px] lg:text-[64px] font-bold text-left text-[#E8F4F1]"
+          class="text-[32px] lg:text-[64px] font-bold text-center lg:text-left text-[#E8F4F1]"
         >
           Decentral 12ed <span class="text_gradient">Exchange Token</span>
         </h1>
         <p
           data-aos="fade-up"
-          class="text-base font-semibold mt-9 leading-6 text-left text-[#C3C3C3]"
+          class="text-base font-semibold mt-9 leading-6 text-center lg:text-left text-[#C3C3C3]"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -38,17 +38,16 @@ export default {
       </div>
       <div class="w-full lg:w-1/2 flex justify-center items-center">
         <div
+          data-aos="fade-up"
           class="w-full lg:w-[561px] mt-10 py-4 lg:py-[31px] px-3 lg:px-[41px] rounded-[15px] border border-solid border-[#3CFF71] shadow-[0px_0px_21px_0px_#3CFF71]"
         >
           <div class="flex w-full justify-between">
             <h1
-              data-aos="fade-up"
               class="text-xl font-bold leading-[30px] text-left text-[#E8F4F1]"
             >
               Swap
             </h1>
             <div
-              data-aos="fade-up"
               class="px-[15px] py-[1px] rounded-[100px] text-[#E8F4F1] border text-[10px] font-bold leading-6 text-left border-[#3dff71]"
             >
               3%
@@ -56,7 +55,6 @@ export default {
           </div>
           <div class="flex flex-col mt-4 gap-y-5">
             <div
-              data-aos="fade-up"
               class="bg-[#061604] px-[10px] py-[15px] rounded-[9px] border-b-[0.5px] border-b-[#C5FFA9] border-solid"
             >
               <div class="flex items-center justify-between">
@@ -91,7 +89,6 @@ export default {
             </div>
 
             <div
-              data-aos="fade-up"
               class="bg-[#061604] px-[10px] py-[15px] rounded-[9px] border-b-[0.5px] border-b-[#C5FFA9] border-solid"
             >
               <div class="flex items-center justify-between">
@@ -133,10 +130,7 @@ export default {
             <h4 class="text-sm font-bold leading-6 text-left text-[#E8F4F1]">
               Best Price
             </h4>
-            <div
-              data-aos="fade-up"
-              class="grid grid-cols-1 gap-y-2 lg:grid-cols-5 gap-x-6"
-            >
+            <div class="grid grid-cols-1 gap-y-2 lg:grid-cols-5 gap-x-6">
               <Button
                 label="Price Impact 0.06"
                 variant="outline"

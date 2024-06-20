@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import Twitter from "../Icons/Twitter.vue";
+import Telegram from "../Icons/Telegram.vue";
+import Discord from "../Icons/Discord.vue";
+import Instagram from "../Icons/Instagram.vue";
+</script>
+
 <template>
   <footer class="w-full relative">
     <div class="container footer_border pb-[38px] w-full">
@@ -7,18 +14,32 @@
       >
         Join Our <span class="text_gradient">Community</span>
       </h1>
-      <div class="flex justify-center gap-x-4 lg:gap-x-[44px] mt-[63px]">
-        <a href="#s">
-          <img src="../Assets/twitter.png" class="w-[62px] h-[62px]" alt="" />
+      <div
+        class="flex justify-center gap-x-4 lg:gap-x-[44px] mt-5 lg:mt-[63px]"
+      >
+        <a
+          href="#s"
+          class="w-[62.86px] icon_hover hover:text-[#040F00] h-[62.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+        >
+          <Twitter />
         </a>
-        <a href="#">
-          <img src="../Assets/telegram.png" class="w-[62px] h-[62px]" alt="" />
+        <a
+          href="#"
+          class="w-[62.86px] icon_hover hover:text-[#040F00] h-[62.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+        >
+          <Telegram />
         </a>
-        <a href="#">
-          <img src="../Assets/discord.png" class="w-[62px] h-[62px]" alt="" />
+        <a
+          href="#"
+          class="w-[62.86px] icon_hover hover:text-[#040F00] h-[62.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+        >
+          <Discord />
         </a>
-        <a href="#">
-          <img src="../Assets/instagram.png" class="w-[62px] h-[62px]" alt="" />
+        <a
+          href="#"
+          class="w-[62.86px] icon_hover hover:text-[#040F00] h-[62.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+        >
+          <Instagram />
         </a>
       </div>
     </div>
@@ -26,12 +47,12 @@
       <div class="flex gap-x-[15px]">
         <a
           href="#"
-          class="text-xs text-[#E8F4F1] underline font-semibold leading-[16.34px] text-center"
+          class="text-xs text-[#E8F4F1] !underline font-semibold leading-[16.34px] text-center transition-all duration-300 hover:!underline hover_link"
           >Privacy Policy</a
         >
         <a
           href="#"
-          class="text-xs text-[#E8F4F1] underline font-semibold leading-[16.34px] text-center"
+          class="text-xs text-[#E8F4F1] !underline font-semibold leading-[16.34px] text-center transition-all duration-300 hover:!underline hover_link"
           >Cookie Policy</a
         >
       </div>

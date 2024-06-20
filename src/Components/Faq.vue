@@ -10,7 +10,7 @@ export default {
 </script>
 <template id="about">
   <section class="w-full relative">
-    <div class="w-full container pt-6 lg:pt-[163px]">
+    <div class="w-full pb-6 container px-4 lg:px-8 pt-6 lg:pt-[163px]">
       <h1
         class="text-[32px] lg:text-[64px] font-bold leading-[77px] text-center text_gradient"
       >

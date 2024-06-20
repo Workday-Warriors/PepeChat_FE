@@ -9,15 +9,15 @@ export default {
   },
 };
 </script>
-<template id="about">
-  <section class="w-full">
+<template>
+  <section id="about" class="w-full">
     <div
-      class="w-full container gap-y-6 flex flex-col lg:flex-row items-center justify-between pt-[24px] lg:pt-[124px]"
+      class="w-full container px-4 lg:px-8 gap-y-6 flex flex-col lg:flex-row items-center justify-between pt-[24px] lg:pt-[124px]"
     >
       <div class="w-full lg:w-1/2">
         <h1
           data-aos="fade-up"
-          class="text-[32px] lg:text-[64px] text-[#E8F4F1] font-bold lg:leading-[96px] text-left"
+          class="text-[32px] lg:text-[64px] text-[#E8F4F1] font-bold lg:leading-[96px] text-center lg:text-left"
         >
           About <br />
           <span data-aos="fade-up" class="text_gradient">PepeChat</span>
