@@ -286,12 +286,12 @@ export default {
         </div>
       </div>
     </div>
-    <div
+    <!-- <div
       class="hidden lg:inline-block green_blur w-[1134px] h-[1134px] absolute left-[-900px]"
     />
     <div
       class="hidden lg:inline-block green_blur w-[1134px] h-[1134px] absolute top-[-600px] right-[-900px]"
-    />
+    /> -->
   </section>
 </template>
 

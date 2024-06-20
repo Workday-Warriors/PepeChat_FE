@@ -80,5 +80,5 @@ body {
 
 .green_blur {
   filter: blur(500px);
-  background: rgba(60, 255, 113, 0.14);
+  background: #3cff7124;
 }

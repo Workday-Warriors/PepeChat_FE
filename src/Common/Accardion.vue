@@ -28,7 +28,9 @@ const handleOpen = () => {
       <div>
         <p
           class="[&quot; text-[16px] px-4 lg:text-base font-semibold text-[#E8F4F1] leading-6 text-left&quot;] absolute top-1/2 transition-all duration-300 -translate-y-1/2 z-10"
-          :class="[isOpen ? '!top-0 !text-[14px] !z-10 ' : '']"
+          :class="[
+            isOpen ? '!top-0 !text-[14px] !z-10 bg-[#040f00] text-white ' : '',
+          ]"
         >
           {{ props.title }}
         </p>
