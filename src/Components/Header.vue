@@ -1,16 +1,39 @@
 <script lang="ts">
-import { LINKS } from "../constants/Links";
 import Button from "../Common/Button.vue";
+import { ref, watch } from "vue";
 
 export default {
   components: {
     Button,
   },
+  setup() {
+    const isOpen = ref<boolean>(false);
+
+    const toggleMenu = () => {
+      isOpen.value = !isOpen.value;
+    };
+
+    watch(isOpen, (newVal) => {
+      if (newVal) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    });
+
+    return {
+      isOpen,
+      toggleMenu,
+    };
+  },
 };
 </script>
+
 <template>
   <header class="w-full">
-    <div class="w-full pt-[43px] flex justify-between items-center container">
+    <div
+      class="w-full pt-5 lg:pt-[43px] flex justify-between items-center container"
+    >
       <a href="#" class="flex items-center">
         <img src="../assets/logo.svg" alt="pepe" />
         <p
@@ -19,16 +42,21 @@ export default {
           PepeChat
         </p>
       </a>
-      <ul class="hidden lg:flex gap-x-[52px] items-center">
+      <ul
+        :class="[isOpen ? 'left-0' : 'left-[-100%]']"
+        class="fixed flex-col top-0 bg-[#040f00] lg:bg-transparent z-[99] pt-20 lg:pt-0 pl-10 gap-y-5 lg:gap-y-0 lg:pl-0 items-start w-full h-full lg:w-auto lg:h-auto lg:flex-row lg:static flex gap-x-[52px] lg:items-center transition-all duration-300"
+      >
         <li>
           <a
-            href=""
+            @click="toggleMenu"
+            href="#"
             class="hover_link text-base font-semibold text-[#E8F4F1] leading-6 text-left"
             >Home</a
           >
         </li>
         <li>
           <a
+            @click="toggleMenu"
             href="#about"
             class="hover_link text-base font-semibold text-[#E8F4F1] leading-6 text-left"
             >About</a
@@ -36,20 +64,37 @@ export default {
         </li>
         <li>
           <a
-            href=""
+            @click="toggleMenu"
+            href="#products"
             class="hover_link text-base font-semibold text-[#E8F4F1] leading-6 text-left"
             >Product</a
           >
         </li>
         <li>
           <a
-            href=""
+            @click="toggleMenu"
+            href="#roadmap"
             class="text-base hover_link font-semibold text-[#E8F4F1] leading-6 text-left"
-            >Product</a
+            >Roadmap</a
           >
         </li>
+        <li class="inline-block lg:hidden">
+          <Button label="Contact Us" variant="primary" />
+        </li>
       </ul>
-      <Button label="Contact Us" variant="primary" />
+      <Button
+        class="lg:inline-block hidden"
+        label="Contact Us"
+        variant="primary"
+      />
+      <div
+        @click="toggleMenu"
+        class="w-[45px] h-[30px] z-[999] flex lg:hidden flex-col justify-between cursor-pointer"
+      >
+        <div class="w-full h-[3px] rounded bg-white" />
+        <div class="w-full h-[3px] rounded bg-white" />
+        <div class="w-full h-[3px] rounded bg-white" />
+      </div>
     </div>
     <div
       class="green_blur hidden lg:inline-block w-[1134px] h-[1134px] absolute top-0 left-[-700px]"

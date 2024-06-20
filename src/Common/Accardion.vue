@@ -27,8 +27,8 @@ const handleOpen = () => {
     <div class="flex items-center justify-between w-full">
       <div>
         <p
-          class="[&quot; text-[14px] lg:text-base font-semibold text-[#E8F4F1] leading-6 text-left&quot;] absolute top-1/2 transition-all duration-300 -translate-y-1/2 z-10"
-          :class="[isOpen ? '!top-0 text_gradient !z-10 !bg-[#040f00] ' : '']"
+          class="[&quot; text-[16px] px-4 lg:text-base font-semibold text-[#E8F4F1] leading-6 text-left&quot;] absolute top-1/2 transition-all duration-300 -translate-y-1/2 z-10"
+          :class="[isOpen ? '!top-0 !text-[14px] !z-10 ' : '']"
         >
           {{ props.title }}
         </p>

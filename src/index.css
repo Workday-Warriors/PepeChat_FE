@@ -33,6 +33,10 @@ body {
   background-clip: text;
 }
 
+.accordion_text_gradient {
+  background: #040f00;
+}
+
 body {
   background-color: #040f00;
 }

@@ -15,7 +15,7 @@ export default {
       <div class="w-full lg:w-1/2">
         <h1
           data-aos="fade-up"
-          class="text-[45px] lg:text-[80px] font-bold lg:leading-[92px] text-left text-[#E8F4F1]"
+          class="text-[45px] font-bold lg:leading-[92px] text-left text-[#E8F4F1]"
         >
           <span class="text_gradient">PepeChat:</span> Expert Advice Real-Time
           Chat
