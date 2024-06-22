@@ -1,10 +1,18 @@
 <script lang="ts">
 import Button from "../Common/Button.vue";
 import { ref, watch } from "vue";
+import Twitter from "../Icons/Twitter.vue";
+import Telegram from "../Icons/Telegram.vue";
+import Discord from "../Icons/Discord.vue";
+import Instagram from "../Icons/Instagram.vue";
 
 export default {
   components: {
     Button,
+    Twitter,
+    Telegram,
+    Discord,
+    Instagram,
   },
   setup() {
     const isOpen = ref<boolean>(false);
@@ -86,6 +94,36 @@ export default {
         <li class="inline-block lg:hidden">
           <Button label="Contact Us" variant="primary" />
         </li>
+        <div class="absolute inline-block lg:hidden bottom-10">
+          <div
+            class="flex justify-center gap-x-4 lg:gap-x-[44px] mt-5 lg:mt-[63px]"
+          >
+            <a
+              href="#s"
+              class="w-[42.86px] icon_hover hover:text-[#040F00] h-[42.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+            >
+              <Twitter />
+            </a>
+            <a
+              href="#"
+              class="w-[42.86px] icon_hover hover:text-[#040F00] h-[42.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+            >
+              <Telegram />
+            </a>
+            <a
+              href="#"
+              class="w-[42.86px] icon_hover hover:text-[#040F00] h-[42.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+            >
+              <Discord />
+            </a>
+            <a
+              href="#"
+              class="w-[42.86px] icon_hover hover:text-[#040F00] h-[42.86px] rounded-full border border-[#3CFF71] text-[#3CFF71] flex justify-center items-center"
+            >
+              <Instagram />
+            </a>
+          </div>
+        </div>
       </ul>
       <Button
         class="lg:inline-block z-10 hidden"
@@ -93,12 +131,27 @@ export default {
         variant="primary"
       />
       <div
-        @click="closeMenu"
-        class="w-[45px] h-[30px] z-[999] flex lg:hidden flex-col justify-between cursor-pointer"
+        @click="toggleMenu"
+        class="w-[35px] h-[26px] z-[999] flex lg:hidden flex-col justify-between cursor-pointer"
       >
-        <div class="w-full h-[3px] rounded bg-white" />
-        <div class="w-full h-[3px] rounded bg-white" />
-        <div class="w-full h-[3px] rounded bg-white" />
+        <div
+          :class="[
+            'w-full h-[3px] rounded bg-white transition-transform duration-300',
+            isOpen ? 'transform rotate-[46deg] translate-y-[13px]' : '',
+          ]"
+        />
+        <div
+          :class="[
+            'w-full h-[3px] rounded bg-white transition-opacity duration-300',
+            isOpen ? 'opacity-0' : '',
+          ]"
+        />
+        <div
+          :class="[
+            'w-full h-[3px] rounded bg-white transition-transform duration-300',
+            isOpen ? 'transform -rotate-[46deg] -translate-y-[10px]' : '',
+          ]"
+        />
       </div>
     </div>
     <div

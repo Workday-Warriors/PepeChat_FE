@@ -105,22 +105,18 @@ body {
   box-shadow: 0px 0px 10.3px 0px #f68822a1 inset;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #202020;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #3cff71;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #3cff71;
 }

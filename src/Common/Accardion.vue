@@ -21,7 +21,7 @@ const handleOpen = () => {
     @click="handleOpen"
     class="w-full min-h-[80px] relative cursor-pointer rounded-[12px] px-0 lg:px-[30px] border border-solid"
     :class="[
-      isOpen ? 'border-[#3CFF71] py-10 ' : 'border-[#E8F4F1]  py-[28px] ',
+      isOpen ? 'border-[#3CFF71] py-10' : 'border-[#E8F4F1]  py-[28px] ',
     ]"
   >
     <div class="flex items-center justify-between w-full">
