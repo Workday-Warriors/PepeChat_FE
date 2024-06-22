@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import Twitter from "../Icons/Twitter.vue";
-import Telegram from "../Icons/Telegram.vue";
-import Discord from "../Icons/Discord.vue";
-import Instagram from "../Icons/Instagram.vue";
+import Twitter from '../Icons/Twitter.vue'
+import Telegram from '../Icons/Telegram.vue'
+import Discord from '../Icons/Discord.vue'
+import Instagram from '../Icons/Instagram.vue'
 </script>
 
 <template>
   <footer class="w-full relative">
     <div class="container footer_border pb-[38px] w-full">
       <h1
-        data-aos="fade-up"
         class="text-[32px] lg:text-[64px] font-bold lg:leading-[77px] mt-6 lg:mt-[221px] text-[#E8F4F1] text-center"
       >
         Join Our <span class="text_gradient">Community</span>
